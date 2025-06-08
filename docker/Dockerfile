@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/playwright/python:v1.50.0-noble as builder
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 USER root
 
